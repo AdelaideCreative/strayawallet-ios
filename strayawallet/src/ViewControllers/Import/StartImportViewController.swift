@@ -9,7 +9,7 @@
 import UIKit
 import BRCore
 
-private let mainURL = "http://straya.network/ext/getaddress"
+private let mainURL = "https://api.strayacrypto.com/v1/Strayacoin/getAddressBalance"
 private let fallbackURL = "https://insight.litecore.io/api/addrs/utxo"
 private let testnetURL = "https://testnet.litecore.io/api/addrs/utxo"
 
@@ -156,7 +156,8 @@ class StartImportViewController : UIViewController {
                                               cachePolicy: .reloadIgnoringLocalCacheData,
                                               timeoutInterval: 20.0)
             request.httpMethod = "POST"
-            request.httpBody = "addrs=\(address)".data(using: .utf8)
+            request.httpBody = "apikey=.7[ZEq&5W5sQ69;E".data(using: .utf8)
+            request.httpBody = "address=\(address)".data(using: .utf8)
             let task = URLSession.shared.dataTask(with: request as URLRequest) { [weak self] data, response, error in
                   guard let myself = self else { return }
                   guard error == nil else { print("error: \(error!)"); return }

@@ -27,7 +27,7 @@
 		<key>StrayaWallet WatchKit App (Complication).xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>6</integer>
+			<integer>7</integer>
 		</dict>
 		<key>StrayaWallet WatchKit App (Notification).xcscheme</key>
 		<dict>
@@ -37,7 +37,7 @@
 		<key>StrayaWallet WatchKit App.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>7</integer>
+			<integer>6</integer>
 		</dict>
 		<key>Testnet.xcscheme_^#shared#^_</key>
 		<dict>

@@ -62,10 +62,10 @@ class PinPadViewController : UICollectionViewController {
         switch keyboardType {
         case .decimalPad:
             items = ["1", "2", "3", "4", "5", "6", "7", "8", "9", currencyDecimalSeparator, "0", deleteKeyIdentifier]
-            layout.itemSize = CGSize(width: screenWidth/3.0 - 2.0/3.0, height: 48.0 - 1.0)
+            layout.itemSize = CGSize(width: screenWidth/2.0 - 2.0/3.0, height: 48.0 - 1.0)
         case .pinPad:
             items = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "", "0", deleteKeyIdentifier]
-            layout.itemSize = CGSize(width: screenWidth/3.0 - 2.0/3.0, height: 54.0 - 0.5)
+            layout.itemSize = CGSize(width: screenWidth/2.0 - 2.0/3.0, height: 54.0 - 0.5)
         }
 
         super.init(collectionViewLayout: layout)
